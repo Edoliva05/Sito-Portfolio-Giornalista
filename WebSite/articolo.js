@@ -1,15 +1,15 @@
-const PROJECT_ID = "IL_TUO_PROJECT_ID_QUI";
+const PROJECT_ID = "qjrhcm46";
 const DATASET = "production";
 
-// 1. Intercettiamo l'ID dall'URL (es. ?id=abc123xyz)
+//Intercetto l'ID dall'URL 
 const urlParams = new URLSearchParams(window.location.search);
 const articleId = urlParams.get('id');
 
 if (!articleId) {
-    window.location.href = 'index.html'; // Se non c'è l'ID, torna alla home
+    window.location.href = 'index.html'; //Se non c'è l'ID, torna alla home
 }
 
-// 2. Query GROQ per prendere un singolo documento tramite il suo ID
+//Query GROQ per prendere un singolo documento tramite il suo ID
 const QUERY = encodeURIComponent(`*[_type == "articolo" && _id == "${articleId}"][0]`);
 const URL = `https://${PROJECT_ID}.api.sanity.io/v2021-10-21/data/query/${DATASET}?query=${QUERY}`;
 
@@ -24,7 +24,7 @@ async function loadSingleArticle() {
             return;
         }
 
-        // 3. Riempiamo l'HTML dinamicamente con i dati di Sanity
+        //Riempio l'html dinamicamente con i dati di Sanity
         document.title = art.title; // Cambia il titolo della scheda del browser
         document.getElementById('article-title').innerText = art.title;
         document.getElementById('article-date').innerText = `Pubblicato il: ${art.date}`;
