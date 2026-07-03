@@ -36,6 +36,3 @@ Thumbs.db
 .env.production.local
 *.local
 
-#img
-.png
-.pfd
