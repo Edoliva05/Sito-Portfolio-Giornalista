@@ -328,7 +328,7 @@ nav a:hover {
     box-shadow: 0 8px 20px rgba(140, 106, 80, 0.25);
 }
 
-/* Responsive Articolo (Per ssmartphone) */
+/* Responsive Articolo */
 @media (max-width: 768px) {
     .single-article-container {
         padding: 30px 20px;
@@ -342,4 +342,49 @@ nav a:hover {
     .article-body {
         font-size: 1.05rem;
     }
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+.site-footer {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+    border-top: 1px solid rgba(140, 106, 80, 0.15); 
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    background-color: #faf1e9;
+}
+
+.footer-note {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.site-footer a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.site-footer a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+.developer-credit {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #a09b96; 
+}
+
+.developer-credit a {
+    color: #a09b96;
+    text-decoration: underline;
+}
+
+.developer-credit a:hover {
+    color: var(--text-main); 
 }
