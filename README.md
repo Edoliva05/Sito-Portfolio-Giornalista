@@ -13,10 +13,16 @@ Un sito web portfolio elegante, dinamico e completamente responsive, sviluppato 
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 * **Frontend:** HTML5, CSS3, JavaScript
-* **Backend / Headless CMS:** [Sanity.io](https://www.sanity.io/)
+* **Backend:** [Sanity.io](https://www.sanity.io/)
 * **Version Control:** Git & GitHub
 
 ---
+
+## Dai un occhio al sito!
+
+Il progetto è online a questo indirizzo:
+👉 **[https://portfolio-agostino.vercel.app](https://portfolio-agostino.vercel.app)**
+
