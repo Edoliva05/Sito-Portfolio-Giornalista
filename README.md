@@ -24,5 +24,5 @@ Un sito web portfolio elegante, dinamico e completamente responsive, sviluppato 
 ## Dai un occhio al sito!
 
 Il progetto è online a questo indirizzo:
-👉 **[https://portfolio-agostino.vercel.app](https://portfolio-agostino.vercel.app)**
+👉 **[https://agostino-lenzi.vercel.app/](https://agostino-lenzi.vercel.app/)**
 
