@@ -21,13 +21,25 @@ export default {
       type: 'image',
       options: { hotspot: true }
     },
-    // Opzione A: Se l'articolo è online, mette il link
+    // NUOVO CAMPO: Scelta testata
+    {
+      name: 'testata',
+      title: 'Testata Giornalistica',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'La Nazione', value: 'La Nazione' },
+          { title: 'Scomodo', value: 'Scomodo' },
+          { title: 'Buzz Prato', value: 'Buzz Prato' }
+        ],
+        layout: 'radio'
+      }
+    },
     {
       name: 'link',
       title: 'Link all\'Articolo Online (Se presente)',
       type: 'url'
     },
-    // Opzione B: Se è cartaceo, può incollare il testo qui dentro
     {
       name: 'body',
       title: 'Testo dell\'Articolo (Per i pezzi cartacei)',
