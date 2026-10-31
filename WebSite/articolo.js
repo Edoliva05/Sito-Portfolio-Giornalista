@@ -35,19 +35,22 @@ async function loadSingleArticle() {
             document.getElementById('article-image').innerHTML = `<img src="${imageUrl}" alt="${art.title}">`;
         }
 
-        // Gestione Testo Cartaceo (andrebbe formattato, ma intanto lo stampiamo pulito)
+        // Gestione Testo Cartaceo 
         if (art.body) {
             // Sostituiamo gli a capo (\n) con dei tag <br> o <p> per formattarlo bene
             const formattedBody = art.body.split('\n').map(para => `<p>${para}</p>`).join('');
             document.getElementById('article-body').innerHTML = formattedBody;
         }
 
-        // Se c'è anche il link alla Nazione online, mettiamo un bel bottone in fondo
+        // GESTIONE LINK E TESTATA DINAMICA
         if (art.link) {
+            // Legge la testata da Sanity. Se non è spuntata, usa "il giornale" di default
+            const nomeGiornale = art.testata ? art.testata : "il giornale";
+            
             document.getElementById('article-link-container').innerHTML = `
                 <hr>
                 <p>Questo articolo è disponibile anche sulla testata online:</p>
-                <a href="${art.link}" target="_blank" class="btn">Leggi su La Nazione</a>
+                <a href="${art.link}" target="_blank" class="btn">Leggi su ${nomeGiornale}</a>
             `;
         }
 
