@@ -30,7 +30,8 @@ export default {
         list: [
           { title: 'La Nazione', value: 'La Nazione' },
           { title: 'Scomodo', value: 'Scomodo' },
-          { title: 'Buzz Prato', value: 'Buzz Prato' }
+          { title: 'Buzz Prato', value: 'Buzz Prato' },
+          { title: 'Generazione News', value: 'Generazione News' }
         ],
         layout: 'radio'
       }
